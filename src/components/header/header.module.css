@@ -23,7 +23,7 @@
 
 .population {
   min-width: 100px;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-right: 10px;
   color: blue;
   align-items: center;
@@ -32,7 +32,7 @@
 
 .countries {
   min-width: 80px;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-right: 10px;
   color: blue;
   align-items: center;
