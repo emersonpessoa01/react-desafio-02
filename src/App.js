@@ -15,11 +15,6 @@ export default class App extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch(process.env.REACT_APP_API_URL || "http://localhost:8080/api/v1")
-      .then(() => console.log("deu certo"))
-      .catch(() => console.log("eu errado"));
-  }
 
   async componentDidMount() {
     const res = await fetch("https://restcountries.eu/rest/v2/all");
