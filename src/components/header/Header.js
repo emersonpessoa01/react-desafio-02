@@ -33,12 +33,12 @@ export default class Header extends Component {
         </div>{" "}
         <br></br>{" "}
         <span className={css.countries}>
-          {countryCount > 1 ? "Países" : "País"}:{" "}
+          {countryCount > 1 ? "Países" : "País"} :{"  "}
           <strong>{countryCount}</strong>
         </span>{" "}
-        <span className={css.separator}>|</span>{" "}
+        <span className={css.separator}>|</span>{"  "}
         <span className={css.population}>
-          População: <strong>{formatNumber(totalPopulation)} </strong>
+          População : <strong>{formatNumber(totalPopulation)} </strong>
         </span>
       </div>
     );
