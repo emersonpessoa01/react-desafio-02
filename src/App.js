@@ -20,13 +20,14 @@ export default class App extends Component {
     const res = await fetch("https://restcountries.eu/rest/v2/all");
     const json = await res.json();
 
-    const allCountries = json.map(({ name, numericCode, flag, population }) => {
+    const allCountries = json.map(({ name, numericCode, flag, population,capital }) => {
       return {
         id: numericCode,
         name,
         filterName: name.toLowerCase(),
         flag,
         population,
+        capital,
       };
     });
 
