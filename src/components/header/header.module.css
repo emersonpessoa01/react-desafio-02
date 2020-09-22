@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Righteous&display=swap");
 
 .flexRow {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -10,9 +10,17 @@
   padding: 5px;
   font-family: Montserrat, sans-serif;
 }
+@media screen and (min-width:600px){
+  .centeredTitle{
+    width: 100%;
+    text-align: left;
+    color: blue;
+    font-family: 'Montserrat'
+  } 
+}
 
 .population {
-  min-width: 200px;
+  min-width: 100px;
   margin-left: 10px;
   margin-right: 10px;
   color: blue;

@@ -16,16 +16,33 @@ export default class Header extends Component {
       onChangeFilter,
     } = this.props;
     return (
+
+      //     <div className={css.flexRow}>
+      //   <form className="col s12">
+      //     <div className="row">
+      //       <div className="input-field col s12">
+      //         <input id="email" type="email" className={flexRow}>
+      //         <label for="email">País</label>
+      //         <span className="helper-text" data-error="wrong" data-success="right">Helper text</span>
+      //       </div>
+      //     </div>
+      //   </form>
+      // </div>
+
       <div className={css.flexRow}>
-        <input style={styles.centeredTitle}
+        <input
+          className={css.centeredTitle}
           placeholder="País"
           type="text"
           value={filter}
           onChange={onChangeFilter}
-        /> |{" "}
+        />{" "}
+        <br></br>{" "}
         <span className={css.countries}>
-          {countryCount>1?"Países":"País"}: <strong>{countryCount}</strong>
-        </span> |{" "}
+          {countryCount > 1 ? "Países" : "País"}:{" "}
+          <strong>{countryCount}</strong>
+        </span>{" "}
+        <span className={css.countries}>|</span>{" "}
         <span className={css.population}>
           População: <strong>{formatNumber(totalPopulation)} </strong>
         </span>
@@ -33,11 +50,12 @@ export default class Header extends Component {
     );
   }
 }
-const styles= {
-  centeredTitle:{
-    textAlign: 'left',
-    color: 'blue',
-    fontFamily: 'Montserrat',
-    maxWidth: '900px'
-  }
-}
+
+// const styles= {
+//   centeredTitle:{
+//     textAlign: 'left',
+//     color: 'blue',
+//     fontFamily: 'Montserrat'
+
+//   }
+// }
