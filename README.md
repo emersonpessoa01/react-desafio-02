@@ -13,3 +13,5 @@ Os alunos deverão desempenhar as seguintes atividades:
 -	Criação de um app para listar países a partir da API https://restcountries.eu/rest/v2/all;
 -	Input para filtrar os países;
 -	Exibir quantidade de países e soma da população dos países filtrados.
+
+### Preview: [react-desafio-02](https://my-app-countries.netlify.app/)
