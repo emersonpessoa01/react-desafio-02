@@ -9,32 +9,40 @@
   border-radius: 5px;
   padding: 5px;
   font-family: Montserrat, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-@media screen and (min-width:768px){
-  .centeredTitle{
+@media screen and (min-width: 600px) {
+  .centeredTitle {
     width: 100%;
     text-align: left;
-    color: white;
-    font-family: 'Montserrat';
-  } 
+    color: blue;
+    font-family: "Montserrat";
+  }
 }
-
-.centeredTitle:focus{
-  border-color: rgb(21,4,98);
-}
-
-
 
 .population {
   min-width: 100px;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-right: 10px;
-  color:white;
+  color: blue;
+  align-items: center;
+  font-weight: bold;
 }
 
 .countries {
   min-width: 80px;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-right: 10px;
-  color: white;
+  color: blue;
+  align-items: center;
+  font-weight: bold;
+}
+
+.separator{
+  min-width: 80px;
+  margin-left: 1px;
+  margin-right: 10px;
+  color: blue;
+  align-items: center;
 }
