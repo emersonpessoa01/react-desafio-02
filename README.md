@@ -14,4 +14,4 @@ Os alunos deverão desempenhar as seguintes atividades:
 -	Input para filtrar os países;
 -	Exibir quantidade de países e soma da população dos países filtrados.
 
-###Preview: [react-deafio-02]("https://compassionate-jennings-1fcd83.netlify.app/")
+### Preview: [react-deafio-02](https://compassionate-jennings-1fcd83.netlify.app/)
