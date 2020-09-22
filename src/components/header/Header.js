@@ -8,10 +8,10 @@ export default class Header extends Component {
   //     const newText = evt.target.value
   //     this.props.onChangeFilter(newText)
   // };
+
   componentDidMount() {
     this.textInput.focus();
   }
-
   render() {
     const {
       filter,
@@ -20,34 +20,22 @@ export default class Header extends Component {
       onChangeFilter,
     } = this.props;
     return (
-      //     <div className={css.flexRow}>
-      //   <form className="col s12">
-      //     <div className="row">
-      //       <div className="input-field col s12">
-      //         <input id="email" type="email" className={flexRow}>
-      //         <label for="email">País</label>
-      //         <span className="helper-text" data-error="wrong" data-success="right">Helper text</span>
-      //       </div>
-      //     </div>
-      //   </form>
-      // </div>
-
       <div className={css.flexRow}>
         <input
           className={css.centeredTitle}
           placeholder="País"
-          type="text" ref={(element) => (this.textInput = element)}
+          type="text"
+          ref={(element) => (this.textInput = element)}
           value={filter}
           onChange={onChangeFilter}
         />{" "}
         <br></br>{" "}
         <span className={css.countries}>
-          {countryCount > 1 ? "Países" : "País"}:{" "}
-          <strong>{countryCount}</strong>
-        </span>{" "}
-        <span className={css.countries}>|</span>{" "}
+          {countryCount > 1 ? "Países" : "País"}: <bold>{countryCount}</bold>
+        </span>
+        <span className={css.separator}>|</span>
         <span className={css.population}>
-          População: <strong>{formatNumber(totalPopulation)} </strong>
+          População: <bold>{formatNumber(totalPopulation)} </bold>
         </span>
       </div>
     );
