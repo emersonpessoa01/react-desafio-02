@@ -8,6 +8,10 @@ export default class Header extends Component {
   //     const newText = evt.target.value
   //     this.props.onChangeFilter(newText)
   // };
+  componentDidMount() {
+    this.textInput.focus();
+  }
+
   render() {
     const {
       filter,
@@ -16,7 +20,6 @@ export default class Header extends Component {
       onChangeFilter,
     } = this.props;
     return (
-
       //     <div className={css.flexRow}>
       //   <form className="col s12">
       //     <div className="row">
@@ -33,7 +36,7 @@ export default class Header extends Component {
         <input
           className={css.centeredTitle}
           placeholder="País"
-          type="text"
+          type="text" ref={(element) => (this.textInput = element)}
           value={filter}
           onChange={onChangeFilter}
         />{" "}

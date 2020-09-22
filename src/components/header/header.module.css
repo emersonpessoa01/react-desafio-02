@@ -15,9 +15,15 @@
     width: 100%;
     text-align: left;
     color: blue;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
   } 
 }
+
+.centeredTitle:focus{
+  border-color: rgb(21,4,98);
+}
+
+
 
 .population {
   min-width: 100px;
