@@ -21,21 +21,24 @@ export default class Header extends Component {
     } = this.props;
     return (
       <div className={css.flexRow}>
-        <input
-          className={css.centeredTitle}
-          placeholder="País"
-          type="text"
-          ref={(element) => (this.textInput = element)}
-          value={filter}
-          onChange={onChangeFilter}
-        />{" "}
+        <div class="input-field col s12">
+          <input
+            className={css.centeredTitle}
+            placeholder="País"
+            type="text"
+            ref={(element) => (this.textInput = element)}
+            value={filter}
+            onChange={onChangeFilter}
+          />
+        </div>{" "}
         <br></br>{" "}
         <span className={css.countries}>
-          {countryCount > 1 ? "Países" : "País"}: <bold>{countryCount}</bold>
-        </span>
-        <span className={css.separator}>|</span>
+          {countryCount > 1 ? "Países" : "País"}:{" "}
+          <strong>{countryCount}</strong>
+        </span>{" "}
+        <span className={css.separator}>|</span>{" "}
         <span className={css.population}>
-          População: <bold>{formatNumber(totalPopulation)} </bold>
+          População: <strong>{formatNumber(totalPopulation)} </strong>
         </span>
       </div>
     );
