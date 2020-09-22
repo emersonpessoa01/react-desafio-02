@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Countries from "./components/countries/Countries";
 import Header from "./components/header/Header";
-import css from "./components/countries/countries.module.css"
+import css from "./components/countries/countries.module.css";
 
 export default class App extends Component {
   constructor() {
@@ -13,6 +13,12 @@ export default class App extends Component {
       filteredPopulation: 0,
       filter: "",
     };
+  }
+
+  componentDidMount() {
+    fetch(process.env.REACT_APP_API_URL || "http://localhost:8080/api/v1")
+      .then(() => console.log("deu certo"))
+      .catch(() => console.log("eu errado"));
   }
 
   async componentDidMount() {
@@ -29,12 +35,9 @@ export default class App extends Component {
       };
     });
 
-    const filteredPopulation = allCountries.reduce(
-      (accumulator, current) => {
-        return accumulator + current.population;
-      },
-      0
-    );
+    const filteredPopulation = allCountries.reduce((accumulator, current) => {
+      return accumulator + current.population;
+    }, 0);
 
     this.setState({
       //allCountries: json,
