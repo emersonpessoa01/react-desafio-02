@@ -12,13 +12,13 @@
   padding-left: 50px;
   padding-right: 50px;
 }
-@media screen and (min-width:600px){
-  .centeredTitle{
+@media screen and (min-width: 600px) {
+  .centeredTitle {
     width: 100%;
     text-align: left;
     color: blue;
-    font-family: 'Montserrat';
-  } 
+    font-family: "Montserrat";
+  }
 }
 
 .population {
@@ -27,7 +27,7 @@
   margin-right: 10px;
   color: blue;
   align-items: center;
-  
+  font-weight: bold;
 }
 
 .countries {
@@ -36,5 +36,13 @@
   margin-right: 10px;
   color: blue;
   align-items: center;
+  font-weight: bold;
+}
 
+.separator{
+  min-width: 80px;
+  margin-left: 1px;
+  margin-right: 10px;
+  color: blue;
+  align-items: center;
 }
