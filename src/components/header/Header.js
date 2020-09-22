@@ -17,18 +17,7 @@ export default class Header extends Component {
     } = this.props;
     return (
 
-      //     <div className={css.flexRow}>
-      //   <form className="col s12">
-      //     <div className="row">
-      //       <div className="input-field col s12">
-      //         <input id="email" type="email" className={flexRow}>
-      //         <label for="email">País</label>
-      //         <span className="helper-text" data-error="wrong" data-success="right">Helper text</span>
-      //       </div>
-      //     </div>
-      //   </form>
-      // </div>
-
+      
       <div className={css.flexRow}>
         <input
           className={css.centeredTitle}
