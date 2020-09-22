@@ -9,7 +9,7 @@ export default class Country extends Component {
     return (
       <div className={`${css.border} ${css.country}`}>
           <img className={css.flag} src={flag} alt={name} />
-    <span className={css.countryName}> {name}</span><span className={css.countryName}>{formatNumber(population)}</span><span className={css.countryName}>-{capital}-</span>
+    <span className={css.countryName}> {name}</span><span className={css.countryName}>{formatNumber(population)}</span><span className={css.countryName}>({capital})</span>
       </div>
     );
   }
