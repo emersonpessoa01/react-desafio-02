@@ -9,13 +9,15 @@
   border-radius: 5px;
   padding: 5px;
   font-family: Montserrat, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 @media screen and (min-width:600px){
   .centeredTitle{
     width: 100%;
     text-align: left;
     color: blue;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
   } 
 }
 
@@ -24,6 +26,8 @@
   margin-left: 10px;
   margin-right: 10px;
   color: blue;
+  align-items: center;
+  
 }
 
 .countries {
@@ -31,4 +35,6 @@
   margin-left: 10px;
   margin-right: 10px;
   color: blue;
+  align-items: center;
+
 }
