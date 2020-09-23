@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { formatNumber } from "../helpers/formatHelpers";
+import { leftPad } from "../helpers/leftPad";
+
 import css from "./header.module.css";
 
 export default class Header extends Component {
