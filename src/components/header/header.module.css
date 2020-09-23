@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Righteous&display=swap");
 *{
-  background-color: black;
+  background-color: rgb(4, 21, 98);
 }
 .flexRow {
   /* display: flex; */
