@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { formatNumber } from "../helpers/formatHelpers";
+
 import css from "./header.module.css";
 
 export default class Header extends Component {
